@@ -1,12 +1,10 @@
 namespace CSharpModule.Task10;
 
-public class Aylana
+public struct Aylana
 {
-    public Nuqta Markaz { get; }
-    public int Radius { get; }
-    public Aylana(Nuqta markaz, int radius)
-    {
-        Markaz = markaz;
-        Radius = radius;
-    }
+    public Nuqta Markaz { get; set; }
+    public int Radius { get; set; }
+    public Aylana(Nuqta markaz, int radius) => (Markaz, Radius) = (markaz, radius);
+    public bool IsIn(Nuqta nuqta) => Markaz.DistanceTo(nuqta) <= Radius;
+    public override string ToString() => $"Markaz: {Markaz}, Radius: {Radius}";
 }
