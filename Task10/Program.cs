@@ -1,4 +1,3 @@
-﻿// 2
 using CSharpModule.Task10;
 
 var testCases = int.Parse(Console.ReadLine() ?? "0");
