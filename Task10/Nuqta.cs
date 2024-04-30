@@ -17,6 +17,8 @@ public struct Nuqta
 
     public static implicit operator Nuqta((int, int) nuqta) => new Nuqta(nuqta.Item1, nuqta.Item2);
 
+    //Code review and send 
+
 
   
     
